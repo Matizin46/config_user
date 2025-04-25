@@ -134,16 +134,16 @@ form input {
     flex-direction: column;
     gap: 12px;
     margin-top: 20px;
-  }
-  
-  #form-cupom input {
+}
+
+#form-cupom input {
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 16px;
-  }
-  
-  .btn-vermelho {
+}
+
+.btn-vermelho {
     background-color: #d62828;
     color: white;
     padding: 12px;
@@ -152,9 +152,28 @@ form input {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .btn-vermelho:hover {
+}
+
+.btn-vermelho:hover {
     background-color: #b71c1c;
+}
+
+.voltar{
+    position: fixed;
+    top:10px;
+    left:20px;
+    background-color: #d62828;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s;
+    z-index: 1000;
   }
-  
+
+.voltar:hover {
+    background-color: #a31c1c;
+}
