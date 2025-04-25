@@ -30,8 +30,17 @@ function mostrarConteudo(tipo) {
             html = "<h3>Notificações</h3><p>Configure suas notificações.</p>";
             break;
         case 'cupons':
-            html = "<h3>Meus Cupons</h3><p>Veja os cupons disponíveis para você.</p>";
+            html = `
+                  <h3>Adicionar Cupom</h3>
+                  <form id="form-cupom" onsubmit="adicionarCupom(event)">
+                    <label for="codigo-cupom">Cupom</label>
+                    <input type="text" id="codigo-cupom" placeholder="Digite seu cupom" required />
+                    <button type="submit" class="btn-vermelho">Adicionar</button>
+                  </form>
+                  <div id="cupom-resultado" style="margin-top: 15px;"></div>
+                `;
             break;
+
         case 'favoritos':
             html = "<h3>Locais Favoritos</h3><p>Gerencie seus locais favoritos.</p>";
             break;
@@ -89,3 +98,18 @@ function salvarPerfil(event) {
     alert(`Perfil salvo!\n\nNome: ${nome}\nTelefone: ${telefone}\nEmail: ${email}\nEndereço: ${endereco}`);
 }
 
+function adicionarCupom(event) {
+    event.preventDefault();
+    const cupom = document.getElementById("codigo-cupom").value.trim().toUpperCase();
+    const resultado = document.getElementById("cupom-resultado");
+  
+    if (cupom === "") {
+      resultado.innerHTML = `<p style="color: red;">Por favor, digite um código de cupom válido.</p>`;
+      return;
+    }
+  
+    // Aqui você pode simular a verificação com backend se quiser
+    resultado.innerHTML = `<p style="color: green;">Cupom <strong>${cupom}</strong> adicionado com sucesso! 🎉</p>`;
+    document.getElementById("form-cupom").reset();
+  }
+  

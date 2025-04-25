@@ -128,3 +128,33 @@ form input {
     border: 1px solid #ccc;
     font-size: 14px;
 }
+
+#form-cupom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  #form-cupom input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .btn-vermelho {
+    background-color: #d62828;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-vermelho:hover {
+    background-color: #b71c1c;
+  }
+  
