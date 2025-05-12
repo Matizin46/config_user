@@ -6,7 +6,7 @@ body {
 
 .header {
     padding: 20px;
-    background: linear-gradient(to right, #ff0000, #ff9900, #ffcc00);
+    background: linear-gradient(to right, #1A0024, #700979, #7B00FF);
     color: white;
     font-weight: bold;
     font-size: 24px;
@@ -70,8 +70,8 @@ body {
 }
 
 .tab.active {
-    color: #d32f2f;
-    border-bottom: 2px solid #d32f2f;
+    color: #700979;
+    border-bottom: 2px solid #700979;
 }
 
 .metodo {
@@ -144,7 +144,7 @@ form input {
 }
 
 .btn-vermelho {
-    background-color: #d62828;
+    background-color: #875fb6;
     color: white;
     padding: 12px;
     border: none;
@@ -155,7 +155,7 @@ form input {
 }
 
 .btn-vermelho:hover {
-    background-color: #b71c1c;
+    background-color: #493c7b;
 }
 
 .voltar{
